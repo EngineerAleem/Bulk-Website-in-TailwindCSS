@@ -173,6 +173,9 @@
   }
 }
 @layer utilities {
+  .mx-200 {
+    margin-inline: calc(var(--spacing) * 200);
+  }
   .my-8 {
     margin-block: calc(var(--spacing) * 8);
   }
@@ -182,8 +185,32 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mr-200 {
+    margin-right: calc(var(--spacing) * 200);
+  }
+  .mr-220 {
+    margin-right: calc(var(--spacing) * 220);
+  }
+  .mr-240 {
+    margin-right: calc(var(--spacing) * 240);
+  }
+  .mr-250 {
+    margin-right: calc(var(--spacing) * 250);
+  }
+  .mr-255 {
+    margin-right: calc(var(--spacing) * 255);
+  }
+  .mr-260 {
+    margin-right: calc(var(--spacing) * 260);
+  }
+  .ml-6 {
+    margin-left: calc(var(--spacing) * 6);
+  }
   .flex {
     display: flex;
+  }
+  .table {
+    display: table;
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -203,8 +230,14 @@
   .w-305 {
     width: calc(var(--spacing) * 305);
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -215,6 +248,12 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-0\.5 {
     gap: calc(var(--spacing) * 0.5);
   }
@@ -224,8 +263,14 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
   .gap-23 {
     gap: calc(var(--spacing) * 23);
+  }
+  .gap-200 {
+    gap: calc(var(--spacing) * 200);
   }
   .gap-245 {
     gap: calc(var(--spacing) * 245);
@@ -269,6 +314,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
   }
@@ -300,6 +348,12 @@
   .text-\[13px\] {
     font-size: 13px;
   }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .text-\[16px\] {
     font-size: 16px;
   }
@@ -319,6 +373,10 @@
   .underline {
     text-decoration-line: underline;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
 }
 @property --tw-border-style {
   syntax: "*";
@@ -329,11 +387,17 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
