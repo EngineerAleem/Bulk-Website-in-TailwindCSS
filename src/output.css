@@ -316,11 +316,17 @@
   .gap-45 {
     gap: calc(var(--spacing) * 45);
   }
+  .gap-50 {
+    gap: calc(var(--spacing) * 50);
+  }
   .gap-55 {
     gap: calc(var(--spacing) * 55);
   }
   .gap-65 {
     gap: calc(var(--spacing) * 65);
+  }
+  .gap-70 {
+    gap: calc(var(--spacing) * 70);
   }
   .gap-80 {
     gap: calc(var(--spacing) * 80);
