@@ -487,6 +487,9 @@
   .text-\[6px\] {
     font-size: 6px;
   }
+  .text-\[8px\] {
+    font-size: 8px;
+  }
   .text-\[10px\] {
     font-size: 10px;
   }
@@ -498,6 +501,9 @@
   }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
